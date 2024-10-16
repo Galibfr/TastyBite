@@ -1,6 +1,6 @@
 # TastyBite 🍽️
 
-![TastyBite Logo](https://i.ibb.co/BChgf7L/imageedit-1-8614356277.png)
+<img src="https://i.ibb.co/BChgf7L/imageedit-1-8614356277.png" alt="TastyBite Logo" width="300" height="200" />
 
 ## À propos 📖
 
