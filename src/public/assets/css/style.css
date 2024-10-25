@@ -71,6 +71,7 @@ html, body {
 
 
 
+
 .card-body {
   height: 300px;
   max-width: 400px;
@@ -530,7 +531,22 @@ header
   }
 }
 
-@media (max-width: 767px) {
+#hamburgerIcon {
+  visibility: hidden; /* Hidden by default */
+  position: relative;
+  left: 320px;
+  bottom: 320px;
+  width: 10%;
+  font-size: 35px;
+  cursor: pointer;
+}
+
+
+@media screen and (max-width: 768px) {
+  #hamburgerIcon{
+    visibility: visible; /* Visible only on small screens */
+
+  }
   .header-area .main-nav .logo {
     color: #1e1e1e;
   }
@@ -627,9 +643,31 @@ header
   .header-area .main-nav .nav li.submenu:hover ul, .header-area .main-nav .nav li.submenu:focus ul {
     height: 0px;
   }
+/* Hidden state for navigation */
+.nav.unactive {
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.3s ease;
 }
 
-@media (min-width: 767px) {
+/* Visible state for navigation */
+.nav.active {
+  visibility: visible;
+  opacity: 1;
+  transition: opacity 0.3s ease;
+}
+
+.wrapper{
+  transform: scale(0.8);
+  position: absolute;
+  left:-120px;
+}
+
+}
+
+
+
+@media (min-width: 100px) {
   .header-area .main-nav .nav {
     display: flex !important;
   }
@@ -899,6 +937,37 @@ reservation
   color: #fff;
   margin-bottom: 65px;
 }
+.tabs-content article {
+  display: none; /* Cacher tous les articles par défaut */
+}
+.tabs-content article.active {
+  display: block; /* Afficher seulement l'article actif */
+}
+.heading-tabs ul {
+  list-style: none;
+  padding: 0;
+}
+.heading-tabs ul li {
+  display: inline;
+  margin: 0 10px;
+}
+.heading-tabs ul li a {
+  text-decoration: none;
+  color: #333; /* Couleur par défaut */
+}
+.heading-tabs ul li a.active {
+  font-weight: bold; /* Mettre en gras l'onglet actif */
+  color: #007BFF; /* Couleur pour l'onglet actif */
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+
+
 
 #reservation {
   padding: 220px 0px;
@@ -956,9 +1025,10 @@ reservation
 
 #contact {
   margin-left: 30px;
-  padding: 45px 30px;
+  padding: 20px 30px;
   background-color: #fff;
   border-radius: 5px;
+  margin-top: -80px;
 }
 
 #contact h4 {
@@ -1317,6 +1387,7 @@ footer
 footer {
   padding: 50px 0px;
   background-color: #fc5647;
+  
 }
 /****this is for make the footer fixed**
 /* .fixed{
@@ -1467,3 +1538,61 @@ responsive
   height: 50px;
 }
 
+
+    /* Styles généraux */
+    .contact-form fieldset {
+      border: none; /* Enlever les bordures */
+      margin-bottom: 15px; /* Espace entre les champs */
+  }
+
+  /* Labels */
+  .contact-form label {
+      font-weight: bold; /* Mettre les labels en gras */
+      display: block; /* Faire en sorte que les labels prennent toute la largeur */
+      margin-bottom: 5px; /* Espace entre le label et le champ */
+  }
+
+  /* Champs de saisie */
+  .contact-form input,
+  .contact-form select,
+  .contact-form textarea {
+      width: 100%; /* Prendre toute la largeur */
+      padding: 10px; /* Espace intérieur */
+      border: 1px solid #ccc; /* Bordure grise */
+      border-radius: 5px; /* Coins arrondis */
+      font-size: 16px; /* Taille de police */
+      transition: border-color 0.3s; /* Transition pour le changement de couleur */
+  }
+
+  /* Bordure à l'accentuation */
+  .contact-form input:focus,
+  .contact-form select:focus,
+  .contact-form textarea:focus {
+      border-color: #FB5849; /* Changer la couleur de bordure au focus */
+      outline: none; /* Enlever le contour par défaut */
+  }
+
+  /* Bouton de soumission */
+  .main-button-icon {
+      background-color: #a72626; /* Couleur de fond du bouton */
+      color: white; /* Couleur du texte */
+      border: none; /* Enlever les bordures */
+      padding: 10px 20px; /* Espace intérieur */
+      border-radius: 5px; /* Coins arrondis */
+      font-size: 16px; /* Taille de police */
+      cursor: pointer; /* Changer le curseur sur hover */
+      transition: background-color 0.3s; /* Transition pour le changement de couleur */
+  }
+
+  /* Couleur au survol */
+  .main-button-icon:hover {
+      background-color: #a12a2a; /* Couleur au survol */
+  }
+
+
+
+@media only screen and (max-width: 780px) {
+  body{
+    min-height: 100vh;
+  }
+}

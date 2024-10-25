@@ -17,7 +17,7 @@ if (session_status() === PHP_SESSION_NONE) {
                     </a>
                     <!-- ***** Logo End ***** -->
                     <!-- ***** Menu Start ***** -->
-                    <ul class="nav">
+                    <ul class="nav unactive">
                         <li class="scroll-to-section"><a href="/">Accueil</a></li>
                         <li class="scroll-to-section"><a href="/product">La Carte</a></li>
                         <li class="scroll-to-section"><a href="/contact">Contactez Nous</a></li>
@@ -32,9 +32,14 @@ if (session_status() === PHP_SESSION_NONE) {
                             <li class="scroll-to-section"><a href="/register">Inscription</a></li>
                         <?php endif; ?>
                     </ul>
+
                     <!-- ***** Menu End ***** -->
                 </nav>
+
             </div>
+        </div>
+        <div id="hamburgerIcon">
+            <i class="fa-solid fa-bars"></i>
         </div>
     </div>
 </header>

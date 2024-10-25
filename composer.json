@@ -10,5 +10,7 @@
             "App\\Infrastructure\\Interfaces\\": "src/interfaces"
         }
     },
-    "require": {}
+    "require": {
+        "phpmailer/phpmailer": "^6.9"
+    }
 }

@@ -69,7 +69,7 @@
 			<div class="tm-paging-links">
 				<nav>
 					<ul>
-						<li class="tm-paging-item"><a href="#" class="tm-paging-link active">Plats</a></li>
+						<li class="tm-paging-item"><a href="#plats" class="tm-paging-link active">Plats</a></li>
 						<li class="tm-paging-item"><a href="#" class="tm-paging-link">Dessert</a></li>
 						<li class="tm-paging-item"><a href="#" class="tm-paging-link">Boissons</a></li>
 					</ul>
@@ -82,165 +82,150 @@
   <div class="text-center container py-5">
     <h4 class="mt-4 mb-5"><strong>les plat les plus populaire</strong></h4>
 
-    <div class="row">
-      <div class="col-lg-4 col-md-12 mb-4">
+    <div class="row" id="plats">
+    <div class="col-lg-4 col-md-12 mb-4">
         <div class="card">
-          <div class="bg-image hover-zoom ripple ripple-surface ripple-surface-light"
-            data-mdb-ripple-color="light">
-            <img src="/assets/images/plain rice.jpg"
-              class="w-100" />
-            <a href="#!">
-              <div class="mask">
-                <div class="d-flex justify-content-start align-items-end h-100"></div>
-              </div>
-              <div class="hover-overlay">
-                <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
-              </div>
-            </a>
-          </div>
-          <div class="card-body">
-            <a href="" class="text-reset">
-              <h5 class="card-title mb-3">Riz Basmati</h5>
-            </a>
-            <a href="" class="text-reset">
-              <p>Dans une poêle avec un filet d'huile d'olive, saisir les morceaux de poulet jusqu'à ce qu'ils soient bien dorés, puis réserver.
-              Dans la même poêle, faire revenir l'oignon, l'ail, le gingembre et les épices avec un peu de sel. </p>
-            </a>
-            <h6 class="mb-3 fs3">€ 3.50</h6>
-          </div>
+            <div class="bg-image hover-zoom ripple ripple-surface ripple-surface-light">
+                <img src="/assets/images/plain rice.jpg" class="w-100" />
+                <a href="#!">
+                    <div class="mask"></div>
+                    <div class="hover-overlay">
+                        <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+                    </div>
+                </a>
+            </div>
+            <div class="card-body">
+                <a href="" class="text-reset">
+                    <h5 class="card-title mb-3">Riz Basmati</h5>
+                </a>
+                <a href="" class="text-reset">
+                    <p>Dans une poêle avec un filet d'huile d'olive, saisir les morceaux de poulet jusqu'à ce qu'ils soient bien dorés, puis réserver.</p>
+                </a>
+                <h6 class="mb-3 fs3">€ 3.50</h6>
+                <button class="add-to-cart-button">Add to Cart</button>
+            </div>
         </div>
-      </div>
-
-      <div class="col-lg-4 col-md-6 mb-4">
-        <div class="card">
-          <div class="bg-image hover-zoom ripple ripple-surface ripple-surface-light"
-            data-mdb-ripple-color="light">
-            <img src="/assets/images/nan.jpg"
-              class="w-100" />
-            <a href="#!">
-              <div class="mask">
-                
-              </div>
-              <div class="hover-overlay">
-                <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
-              </div>
-            </a>
-          </div>
-          <div class="card-body">
-            <a href="" class="text-reset">
-              <h5 class="card-title mb-3">Poulate shahi korma</h5>
-            </a>
-            <a href="" class="text-reset">
-              <p>Dans une poêle avec un filet d'huile d'olive, saisir les morceaux de poulet jusqu'à ce qu'ils soient bien dorés, puis réserver.
-              Dans la même poêle, faire revenir l'oignon, l'ail, le gingembre et les épices avec un peu de sel. </p>
-            </a>
-            <h6 class="mb-3 fs3">€ 2.50</h6>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-lg-4 col-md-6 mb-4">
-      <div class="card">
-          <div class="bg-image hover-zoom ripple ripple-surface ripple-surface-light"
-            data-mdb-ripple-color="light">
-            <img src="\assets\images\baingan-bharta.jpg"
-              class="w-100" />
-            <a href="#!">
-              <div class="mask">
-                <div class="d-flex justify-content-start align-items-end h-100"></div>
-              </div>
-              <div class="hover-overlay">
-                <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
-              </div>
-            </a>
-          </div>
-          <div class="card-body">
-            <a href="" class="text-reset">
-              <h5 class="card-title mb-3">Baingan-bharta</h5>
-            </a>
-            <a href="" class="text-reset">
-              <p>Dans une poêle avec un filet d'huile d'olive, saisir les morceaux de poulet jusqu'à ce qu'ils soient bien dorés, puis réserver.
-              Dans la même poêle, faire revenir l'oignon, l'ail, le gingembre et les épices avec un peu de sel. </p>
-            </a>
-            <h6 class="mb-3 fs3">€ 3.50</h6>
-          </div>
-        </div>
-      </div>
     </div>
 
-    <div class="row">
-      <div class="col-lg-4 col-md-12 mb-4">
+    <div class="col-lg-4 col-md-6 mb-4">
         <div class="card">
-          <div class="bg-image hover-zoom ripple" data-mdb-ripple-color="light">
-            <img src="/assets/images/nan gril.jpg"
-              class="w-100" />
-            <a href="#!">
-              <div class="hover-overlay">
-                <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
-              </div>
-            </a>
-          </div>
-          <div class="card-body">
-            <a href="" class="text-reset">
-              <h5 class="card-title mb-3">Naan Garlic</h5>
-            </a>
-
-            <a href="" class="text-reset">
-              <p>Dans une poêle avec un filet d'huile d'olive, saisir les morceaux de poulet jusqu'à ce qu'ils soient bien dorés, puis réserver.
-              Dans la même poêle, faire revenir l'oignon, l'ail, le gingembre et les épices avec un peu de sel. </p>
-            </a>
-            <h6 class="mb-3 fs3">€ 3.50</h6>
-          </div>
+            <div class="bg-image hover-zoom ripple ripple-surface ripple-surface-light">
+                <img src="/assets/images/nan.jpg" class="w-100" />
+                <a href="#!">
+                    <div class="mask"></div>
+                    <div class="hover-overlay">
+                        <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+                    </div>
+                </a>
+            </div>
+            <div class="card-body">
+                <a href="" class="text-reset">
+                    <h5 class="card-title mb-3">Poulet Shahi Korma</h5>
+                </a>
+                <a href="" class="text-reset">
+                    <p>Dans une poêle avec un filet d'huile d'olive, saisir les morceaux de poulet jusqu'à ce qu'ils soient bien dorés, puis réserver.</p>
+                </a>
+                <h6 class="mb-3 fs3">€ 2.50</h6>
+                <button class="add-to-cart-button">Add to Cart</button>
+            </div>
         </div>
-      </div>
-
-      <div class="col-lg-4 col-md-6 mb-4">
-        <div class="card">
-          <div class="bg-image hover-zoom ripple ripple-surface ripple-surface-light"
-            data-mdb-ripple-color="light">
-            <img src="/assets/images/chicken cury.jpg"
-              class="w-100" />
-            <a href="#!">
-              <div class="mask">
-                <div class="d-flex justify-content-start align-items-end h-100"></div>
-              </div>
-              <div class="hover-overlay">
-                <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
-              </div>
-            </a>
-          </div>
-          <div class="card-body">
-            <a href="" class="text-reset">
-              <h5 class="card-title mb-3">Masala karai</h5>
-            </a>
-            <a href="" class="text-reset">
-              <p> Dans une poêle avec un filet d'huile d'olive, saisir les morceaux de poulet jusqu'à ce qu'ils soient bien dorés, puis réserver.
-              Dans la même poêle, faire revenir l'oignon, l'ail, le gingembre et les épices avec un peu de sel. </p>
-            </a>
-            <h6 class="mb-3 fs3">€ 3.50</h6>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-lg-4 col-md-6 mb-4">
-        <div class="card">
-          <div class="bg-image hover-zoom ripple" data-mdb-ripple-color="light">
-            <img src="/assets/images/chicken_birani.jpg"
-              class="w-100" />
-          </div>
-          <div class="card-body">
-            <a href="" class="text-reset">
-              <h5 class="card-title mb-3"> Poulet Biriyani</h5>
-            </a>
-            <a href="" class="text-reset">
-              <p>Dans une poêle avec un filet d'huile d'olive, saisir les morceaux de poulet jusqu'à ce qu'ils soient bien dorés, puis réserver.
-              Dans la même poêle, faire revenir l'oignon, l'ail, le gingembre et les épices avec un peu de sel. </p>
-            </a>
-            <h6 class="mb-3 fs3">€ 3.50</h6>
-          </div>
-        </div>
-      </div>
     </div>
+
+    <div class="col-lg-4 col-md-6 mb-4">
+        <div class="card">
+            <div class="bg-image hover-zoom ripple ripple-surface ripple-surface-light">
+                <img src="\assets\images\baingan-bharta.jpg" class="w-100" />
+                <a href="#!">
+                    <div class="mask"></div>
+                    <div class="hover-overlay">
+                        <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+                    </div>
+                </a>
+            </div>
+            <div class="card-body">
+                <a href="" class="text-reset">
+                    <h5 class="card-title mb-3">Baingan-bharta</h5>
+                </a>
+                <a href="" class="text-reset">
+                    <p>Dans une poêle avec un filet d'huile d'olive, saisir les morceaux de poulet jusqu'à ce qu'ils soient bien dorés, puis réserver.</p>
+                </a>
+                <h6 class="mb-3 fs3">€ 3.50</h6>
+                <button class="add-to-cart-button">Add to Cart</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="row">
+    <div class="col-lg-4 col-md-12 mb-4">
+        <div class="card">
+            <div class="bg-image hover-zoom ripple" data-mdb-ripple-color="light">
+                <img src="/assets/images/nan gril.jpg" class="w-100" />
+                <a href="#!">
+                    <div class="hover-overlay">
+                        <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+                    </div>
+                </a>
+            </div>
+            <div class="card-body">
+                <a href="" class="text-reset">
+                    <h5 class="card-title mb-3">Naan Garlic</h5>
+                </a>
+                <a href="" class="text-reset">
+                    <p>Dans une poêle avec un filet d'huile d'olive, saisir les morceaux de poulet jusqu'à ce qu'ils soient bien dorés, puis réserver.</p>
+                </a>
+                <h6 class="mb-3 fs3">€ 3.50</h6>
+                <button class="add-to-cart-button">Add to Cart</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-lg-4 col-md-6 mb-4">
+        <div class="card">
+            <div class="bg-image hover-zoom ripple ripple-surface ripple-surface-light" data-mdb-ripple-color="light">
+                <img src="/assets/images/chicken cury.jpg" class="w-100" />
+                <a href="#!">
+                    <div class="mask">
+                        <div class="d-flex justify-content-start align-items-end h-100"></div>
+                    </div>
+                    <div class="hover-overlay">
+                        <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+                    </div>
+                </a>
+            </div>
+            <div class="card-body">
+                <a href="" class="text-reset">
+                    <h5 class="card-title mb-3">Masala Karai</h5>
+                </a>
+                <a href="" class="text-reset">
+                    <p>Dans une poêle avec un filet d'huile d'olive, saisir les morceaux de poulet jusqu'à ce qu'ils soient bien dorés, puis réserver.</p>
+                </a>
+                <h6 class="mb-3 fs3">€ 3.50</h6>
+                <button class="add-to-cart-button">Add to Cart</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-lg-4 col-md-6 mb-4">
+        <div class="card">
+            <div class="bg-image hover-zoom ripple" data-mdb-ripple-color="light">
+                <img src="/assets/images/chicken_birani.jpg" class="w-100" />
+            </div>
+            <div class="card-body">
+                <a href="" class="text-reset">
+                    <h5 class="card-title mb-3">Poulet Biriyani</h5>
+                </a>
+                <a href="" class="text-reset">
+                    <p>Dans une poêle avec un filet d'huile d'olive, saisir les morceaux de poulet jusqu'à ce qu'ils soient bien dorés, puis réserver.</p>
+                </a>
+                <h6 class="mb-3 fs3">€ 3.50</h6>
+                <button class="add-to-cart-button">Add to Cart</button>
+            </div>
+        </div>
+    </div>
+</div>
+
   </div>
 </section>
     </section>

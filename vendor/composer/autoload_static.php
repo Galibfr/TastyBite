@@ -7,8 +7,13 @@ namespace Composer\Autoload;
 class ComposerStaticInit17212f20b03cd598858154327eacfa60
 {
     public static $prefixLengthsPsr4 = array (
+        'P' => 
+        array (
+            'PHPMailer\\PHPMailer\\' => 20,
+        ),
         'A' => 
         array (
+            'App\\Models\\' => 11,
             'App\\Infrastructure\\Interfaces\\' => 30,
             'App\\Controllers\\' => 16,
             'App\\Commons\\' => 12,
@@ -17,6 +22,14 @@ class ComposerStaticInit17212f20b03cd598858154327eacfa60
     );
 
     public static $prefixDirsPsr4 = array (
+        'PHPMailer\\PHPMailer\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/phpmailer/phpmailer/src',
+        ),
+        'App\\Models\\' => 
+        array (
+            0 => __DIR__ . '/../..' . '/src/models',
+        ),
         'App\\Infrastructure\\Interfaces\\' => 
         array (
             0 => __DIR__ . '/../..' . '/src/interfaces',
@@ -36,11 +49,6 @@ class ComposerStaticInit17212f20b03cd598858154327eacfa60
     );
 
     public static $classMap = array (
-        'App\\Commons\\Controller' => __DIR__ . '/../..' . '/src/commons/Controller.php',
-        'App\\Commons\\Router' => __DIR__ . '/../..' . '/src/commons/Router.php',
-        'App\\Commons\\View' => __DIR__ . '/../..' . '/src/commons/View.php',
-        'App\\Controllers\\HomeController' => __DIR__ . '/../..' . '/src/controllers/HomeController.php',
-        'App\\Infrastructure\\Interfaces\\RouterInterface' => __DIR__ . '/../..' . '/src/interfaces/RouterInterface.php',
         'Composer\\InstalledVersions' => __DIR__ . '/..' . '/composer/InstalledVersions.php',
     );
 
