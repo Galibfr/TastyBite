@@ -1,0 +1,48 @@
+/node_modules
+/public/hot
+/public/storage
+/storage/*.key
+/vendor
+/.idea
+/.vscode
+/.env
+/.env.*.backup
+/.phpunit.result.cache
+/.sass-cache
+/.vagrant
+/.cache
+/.DS_Store
+Thumbs.db
+
+# Laravel specific
+.env
+.env.backup
+Homestead.yaml
+Homestead.json
+
+# Composer
+composer.lock
+
+# Ignoring log files
+/storage/logs/*.log
+/storage/framework/cache/data/*
+/storage/framework/sessions/*
+/storage/framework/testing/*
+/storage/framework/views/*
+
+# Ignore npm debug file
+npm-debug.log
+yarn-error.log
+pids
+pid
+*.seed
+
+# Caches
+/.cache
+/.htaccess
+
+# Temporary files
+*.swp
+*.swo
+*.bak
+*.tmp
