@@ -102,7 +102,7 @@
                     <p>Dans une poêle avec un filet d'huile d'olive, saisir les morceaux de poulet jusqu'à ce qu'ils soient bien dorés, puis réserver.</p>
                 </a>
                 <h6 class="mb-3 fs3">€ 3.50</h6>
-                <button class="add-to-cart-button">Add to Cart</button>
+                <button class="add-to-cart-button" data-id="1">Ajouter au panier</button>
             </div>
         </div>
     </div>
@@ -126,7 +126,7 @@
                     <p>Dans une poêle avec un filet d'huile d'olive, saisir les morceaux de poulet jusqu'à ce qu'ils soient bien dorés, puis réserver.</p>
                 </a>
                 <h6 class="mb-3 fs3">€ 2.50</h6>
-                <button class="add-to-cart-button">Add to Cart</button>
+                <button class="add-to-cart-button" data-id="1">Ajouter au panier</button>
             </div>
         </div>
     </div>
@@ -150,7 +150,7 @@
                     <p>Dans une poêle avec un filet d'huile d'olive, saisir les morceaux de poulet jusqu'à ce qu'ils soient bien dorés, puis réserver.</p>
                 </a>
                 <h6 class="mb-3 fs3">€ 3.50</h6>
-                <button class="add-to-cart-button">Add to Cart</button>
+                <button class="add-to-cart-button" data-id="1">Ajouter au panier</button>
             </div>
         </div>
     </div>
@@ -176,7 +176,7 @@
                     <p>Dans une poêle avec un filet d'huile d'olive, saisir les morceaux de poulet jusqu'à ce qu'ils soient bien dorés, puis réserver.</p>
                 </a>
                 <h6 class="mb-3 fs3">€ 3.50</h6>
-                <button class="add-to-cart-button">Add to Cart</button>
+                <button class="add-to-cart-button" data-id="1">Ajouter au panier</button>
             </div>
         </div>
     </div>
@@ -202,7 +202,7 @@
                     <p>Dans une poêle avec un filet d'huile d'olive, saisir les morceaux de poulet jusqu'à ce qu'ils soient bien dorés, puis réserver.</p>
                 </a>
                 <h6 class="mb-3 fs3">€ 3.50</h6>
-                <button class="add-to-cart-button">Add to Cart</button>
+                <button class="add-to-cart-button" data-id="1">Ajouter au panier</button>
             </div>
         </div>
     </div>
@@ -220,7 +220,7 @@
                     <p>Dans une poêle avec un filet d'huile d'olive, saisir les morceaux de poulet jusqu'à ce qu'ils soient bien dorés, puis réserver.</p>
                 </a>
                 <h6 class="mb-3 fs3">€ 3.50</h6>
-                <button class="add-to-cart-button">Add to Cart</button>
+                <button class="add-to-cart-button" data-id="1">Ajouter au panier</button>
             </div>
         </div>
     </div>
@@ -422,3 +422,42 @@
     </div>
   </div>
 </section>
+
+<script>
+// Get all the 'Add to Cart' buttons
+const addCartButtons = document.querySelectorAll(".add-to-cart-button");
+
+// Get the cart count element
+const cart = document.querySelector("#cart-count");
+
+// Retrieve the current cart count from localStorage (if it exists)
+let cartCount = localStorage.getItem("cartCount");
+
+// If there's no cart count in localStorage, initialize it to 0
+if (!cartCount) {
+    cartCount = 0;
+} else {
+    cartCount = parseInt(cartCount);
+}
+
+// Display the current cart count
+cart.textContent = cartCount;
+
+// Loop through all 'Add to Cart' buttons and add an event listener to each one
+addCartButtons.forEach(button => {
+    button.onclick = function() {
+        // Increment the cart count
+        cartCount++;
+
+        // Update the cart count in the DOM
+        cart.textContent = cartCount;
+
+        // Save the new cart count to localStorage
+        localStorage.setItem("cartCount", cartCount);
+
+    };
+});
+
+
+
+</script>

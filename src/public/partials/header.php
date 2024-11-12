@@ -25,8 +25,24 @@ if (session_status() === PHP_SESSION_NONE) {
                         <?php if (isset($_SESSION['logged_in']) && $_SESSION['logged_in'] === true): ?>
                             <li id="welcomeText" class="scroll-to-section"><a>Bienvenue, <?php echo htmlspecialchars($_SESSION['user_name']); ?></a></li>
                             <div id="dropdown">
+                            <li class="scroll-to-section"><a href="/profile">Profile</a></li>
                                 <li class="scroll-to-section"><a href="/logout">Déconnexion</a></li>
                             </div>
+                            <!-- Basket/Cart Icon with Badge -->
+                            <a class="nav-link basket" href="javascript:void(0);" id="basketIcon">
+                                <i style="color:black;" class="fas fa-shopping-cart"></i>
+                                <span class="badge badge-pill badge-danger" id="cart-count">0</span>
+                            </a>
+
+                            <!-- Dropdown Menu for Basket -->
+                            <div id="basketDropdown" style="display:none;">
+                                <ul>
+                                    <li><a href="/cart">View Cart</a></li>
+                                    <li><a href="/checkout">Checkout</a></li>
+                                </ul>
+                            </div>
+
+
                         <?php else: ?>
                             <li class="scroll-to-section"><a href="/login">Connexion</a></li>
                             <li class="scroll-to-section"><a href="/register">Inscription</a></li>

@@ -1,6 +1,6 @@
 <?php
-session_start();
 require '../../vendor/autoload.php';
+session_start();
 
 use App\Commons\Router;
 use App\Controllers\HomeController;
@@ -18,9 +18,10 @@ $router->addRoute('/register', RegisterController::class, 'register');
 $router->addRoute('/login', LoginController::class, 'login');
 $router->addRoute('/logout', LogoutController::class, 'logout');
 $router->addRoute('/product', ProductController::class, 'product');
-$router->addRoute('/product/(\d+)', ProductController::class, 'addToCart');
+// $router->addRoute('/product/(\d+)', ProductController::class, 'addToCart');
 $router->addRoute('/contact', ContactController::class, 'contact');
 $router->addRoute('/contact_processed', \App\Controllers\ContactProcessedController::class, 'contactProcessed');
+$router->addRoute('/add-to-cart/(\d+)', ProductController::class, 'addToCart');
 $uri =  parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH);
 
 $router->dispatch($uri);

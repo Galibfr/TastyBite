@@ -4,7 +4,7 @@
 
 namespace Composer\Autoload;
 
-class ComposerStaticInit17212f20b03cd598858154327eacfa60
+class ComposerStaticInit54274f3c05d182ecdd5722cd270e2adf
 {
     public static $prefixLengthsPsr4 = array (
         'P' => 
@@ -49,15 +49,37 @@ class ComposerStaticInit17212f20b03cd598858154327eacfa60
     );
 
     public static $classMap = array (
+        'App\\Commons\\Controller' => __DIR__ . '/../..' . '/src/commons/Controller.php',
+        'App\\Commons\\Model' => __DIR__ . '/../..' . '/src/commons/Model.php',
+        'App\\Commons\\Router' => __DIR__ . '/../..' . '/src/commons/Router.php',
+        'App\\Commons\\View' => __DIR__ . '/../..' . '/src/commons/View.php',
+        'App\\Controllers\\ContactController' => __DIR__ . '/../..' . '/src/controllers/ContactController.php',
+        'App\\Controllers\\ContactProcessedController' => __DIR__ . '/../..' . '/src/controllers/ContactProcessedController.php',
+        'App\\Controllers\\HomeController' => __DIR__ . '/../..' . '/src/controllers/HomeController.php',
+        'App\\Controllers\\LoginController' => __DIR__ . '/../..' . '/src/controllers/LoginController.php',
+        'App\\Controllers\\LogoutController' => __DIR__ . '/../..' . '/src/controllers/LogoutController.php',
+        'App\\Controllers\\ProductController' => __DIR__ . '/../..' . '/src/controllers/ProductController.php',
+        'App\\Controllers\\RegisterController' => __DIR__ . '/../..' . '/src/controllers/RegisterController.php',
+        'App\\Infrastructure\\Interfaces\\RouterInterface' => __DIR__ . '/../..' . '/src/interfaces/RouterInterface.php',
+        'App\\Infrastructure\\Interfaces\\ViewInterface' => __DIR__ . '/../..' . '/src/interfaces/ViewInterface.php',
+        'App\\Models\\ProductModel' => __DIR__ . '/../..' . '/src/models/ProductModel.php',
+        'App\\Models\\UserModel' => __DIR__ . '/../..' . '/src/models/UserModel.php',
         'Composer\\InstalledVersions' => __DIR__ . '/..' . '/composer/InstalledVersions.php',
+        'PHPMailer\\PHPMailer\\DSNConfigurator' => __DIR__ . '/..' . '/phpmailer/phpmailer/src/DSNConfigurator.php',
+        'PHPMailer\\PHPMailer\\Exception' => __DIR__ . '/..' . '/phpmailer/phpmailer/src/Exception.php',
+        'PHPMailer\\PHPMailer\\OAuth' => __DIR__ . '/..' . '/phpmailer/phpmailer/src/OAuth.php',
+        'PHPMailer\\PHPMailer\\OAuthTokenProvider' => __DIR__ . '/..' . '/phpmailer/phpmailer/src/OAuthTokenProvider.php',
+        'PHPMailer\\PHPMailer\\PHPMailer' => __DIR__ . '/..' . '/phpmailer/phpmailer/src/PHPMailer.php',
+        'PHPMailer\\PHPMailer\\POP3' => __DIR__ . '/..' . '/phpmailer/phpmailer/src/POP3.php',
+        'PHPMailer\\PHPMailer\\SMTP' => __DIR__ . '/..' . '/phpmailer/phpmailer/src/SMTP.php',
     );
 
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
-            $loader->prefixLengthsPsr4 = ComposerStaticInit17212f20b03cd598858154327eacfa60::$prefixLengthsPsr4;
-            $loader->prefixDirsPsr4 = ComposerStaticInit17212f20b03cd598858154327eacfa60::$prefixDirsPsr4;
-            $loader->classMap = ComposerStaticInit17212f20b03cd598858154327eacfa60::$classMap;
+            $loader->prefixLengthsPsr4 = ComposerStaticInit54274f3c05d182ecdd5722cd270e2adf::$prefixLengthsPsr4;
+            $loader->prefixDirsPsr4 = ComposerStaticInit54274f3c05d182ecdd5722cd270e2adf::$prefixDirsPsr4;
+            $loader->classMap = ComposerStaticInit54274f3c05d182ecdd5722cd270e2adf::$classMap;
 
         }, null, ClassLoader::class);
     }

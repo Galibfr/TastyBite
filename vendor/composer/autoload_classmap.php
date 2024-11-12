@@ -6,5 +6,27 @@ $vendorDir = dirname(__DIR__);
 $baseDir = dirname($vendorDir);
 
 return array(
+    'App\\Commons\\Controller' => $baseDir . '/src/commons/Controller.php',
+    'App\\Commons\\Model' => $baseDir . '/src/commons/Model.php',
+    'App\\Commons\\Router' => $baseDir . '/src/commons/Router.php',
+    'App\\Commons\\View' => $baseDir . '/src/commons/View.php',
+    'App\\Controllers\\ContactController' => $baseDir . '/src/controllers/ContactController.php',
+    'App\\Controllers\\ContactProcessedController' => $baseDir . '/src/controllers/ContactProcessedController.php',
+    'App\\Controllers\\HomeController' => $baseDir . '/src/controllers/HomeController.php',
+    'App\\Controllers\\LoginController' => $baseDir . '/src/controllers/LoginController.php',
+    'App\\Controllers\\LogoutController' => $baseDir . '/src/controllers/LogoutController.php',
+    'App\\Controllers\\ProductController' => $baseDir . '/src/controllers/ProductController.php',
+    'App\\Controllers\\RegisterController' => $baseDir . '/src/controllers/RegisterController.php',
+    'App\\Infrastructure\\Interfaces\\RouterInterface' => $baseDir . '/src/interfaces/RouterInterface.php',
+    'App\\Infrastructure\\Interfaces\\ViewInterface' => $baseDir . '/src/interfaces/ViewInterface.php',
+    'App\\Models\\ProductModel' => $baseDir . '/src/models/ProductModel.php',
+    'App\\Models\\UserModel' => $baseDir . '/src/models/UserModel.php',
     'Composer\\InstalledVersions' => $vendorDir . '/composer/InstalledVersions.php',
+    'PHPMailer\\PHPMailer\\DSNConfigurator' => $vendorDir . '/phpmailer/phpmailer/src/DSNConfigurator.php',
+    'PHPMailer\\PHPMailer\\Exception' => $vendorDir . '/phpmailer/phpmailer/src/Exception.php',
+    'PHPMailer\\PHPMailer\\OAuth' => $vendorDir . '/phpmailer/phpmailer/src/OAuth.php',
+    'PHPMailer\\PHPMailer\\OAuthTokenProvider' => $vendorDir . '/phpmailer/phpmailer/src/OAuthTokenProvider.php',
+    'PHPMailer\\PHPMailer\\PHPMailer' => $vendorDir . '/phpmailer/phpmailer/src/PHPMailer.php',
+    'PHPMailer\\PHPMailer\\POP3' => $vendorDir . '/phpmailer/phpmailer/src/POP3.php',
+    'PHPMailer\\PHPMailer\\SMTP' => $vendorDir . '/phpmailer/phpmailer/src/SMTP.php',
 );

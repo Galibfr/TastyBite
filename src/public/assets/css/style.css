@@ -1512,6 +1512,53 @@ responsive
   }
 }
 
+.add-to-cart-button{
+  padding:10px; 
+  background:crimson;
+  color:white;
+  text-shadow: 1px 1px 5px black;
+  border:none;
+  transition:0.3s ease-in-out;
+}
+
+.add-to-cart-button:hover{
+  background: rgb(168, 15, 46);
+}
+
+#basketDropdown {
+  position: absolute;
+  top: 50px; /* Adjust based on your header layout */
+  right: -30px;
+  background-color: white;
+  border: 1px solid #ddd;
+  padding: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  z-index: 999;
+}
+
+#basketDropdown ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+#basketDropdown ul li {
+  padding: 8px;
+  border-bottom: 1px solid #ddd;
+}
+
+#basketDropdown ul li:last-child {
+  border-bottom: none;
+}
+
+#basketDropdown ul li a {
+  text-decoration: none;
+  color: black;
+}
+
+#basketDropdown ul li a:hover {
+  color: #007bff;
+}
 
 
 #preloader {
